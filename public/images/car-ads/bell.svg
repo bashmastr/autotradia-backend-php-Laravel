@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <style>
+            .bell_svg{fill:#1a1a1a}
+        </style>
+    </defs>
+    <g>
+        <path fill="none" d="M0 0H24V24H0z" transform="translate(-356 -834) translate(356 834)"/>
+        <path class="bell_svg" d="M12.38 22.927a2.1 2.1 0 0 0 2.1-2.1h-4.19a2.1 2.1 0 0 0 2.09 2.1zm6.285-6.285V11.4c0-3.216-1.718-5.908-4.714-6.621v-.708a1.571 1.571 0 0 0-3.143 0v.712C7.8 5.5 6.1 8.178 6.1 11.4v5.238L4 18.737v1.048h16.761v-1.048z" transform="translate(-356 -834) translate(355.62 833.036)"/>
+    </g>
+</svg>

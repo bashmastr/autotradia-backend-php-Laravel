@@ -1,0 +1,1270 @@
+{
+	"info": {
+		"_postman_id": "49563381-99e9-4c4f-8dcf-d04ce0a08fbe",
+		"name": "autotradia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "singup",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/signup",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "evaawan84@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://192.168.18.15:8000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"18",
+								"15"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "user",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTc5ODQ1N2RiZGY5ZTBlYTQzN2UyYWM1ZjMxNTQ0MGVkYmI0OWYyNWQ5ZjJlOTExZmFkN2FlM2ZjYzA0MmJiZTY3YjI2M2QzZTE0M2YxZDYiLCJpYXQiOiIxNjExOTE2NTI0LjQxMTk3OCIsIm5iZiI6IjE2MTE5MTY1MjQuNDExOTg4IiwiZXhwIjoiMTY0MzQ1MjUyNC4zNjY3MzIiLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.VlILIebMwpCjXAEZJShU6nZjx3VFI6h3E44146pyjZPUn1FuRQxStgthUupJp1b2JZ3RFiR-n7_1MMIv6lWBqDpLYum_M-Sz3V_-mU7fbSzigKnLZcwCzVgnk71CyjsrWTiIxw0i8u1kmDUTCRsoQDJab1NufkZYERScuKd9_Bx2evTUeYMZgeLUDO2II4Ak1qiZaY3DWvZXDrnTDy18jM7H_VlA6dTZE7djTCNIY7C2ugi8KM0529Tw0HqQi5aXOJvlHAujeclUNC6-533rfjAfKZteJsJc-ArbIsKtjxOBnRcEdnTygsHlZDnx-cLpnJjEKSu6s0cUmW2kGvTE0x3pQrm2mPLZChA21CTgnd-gyEJRfERfkskt6aOXBNeWq_4fCydeyRcXxHMY3Jac1EnNOsVYrJib0Aybxa6BaLH6v5-vvLacYeZevO13jeSPpo6KVZlHkWoHdV53FI4iwtNAFI62tLM_FEnSUay4zWM1vvN5s-JybWRA14B9EVXPmtW41TTQhVd6R1jvPCyMydjoFr9Eqyc91xWkORUU1z7uABLufO6jEceca6-eP7ZL4itA0Sua7eJ-WgTWWctBmz3kl1q723sZfVl4beuikM9Q7jZCeV5fU0IiqrgUnSSrjOZz_RNikWqiBTpSBUQlPu6gICTM9uUCVrJ_97AI-kE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/user",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "logout",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiOTc5ODQ1N2RiZGY5ZTBlYTQzN2UyYWM1ZjMxNTQ0MGVkYmI0OWYyNWQ5ZjJlOTExZmFkN2FlM2ZjYzA0MmJiZTY3YjI2M2QzZTE0M2YxZDYiLCJpYXQiOiIxNjExOTE2NTI0LjQxMTk3OCIsIm5iZiI6IjE2MTE5MTY1MjQuNDExOTg4IiwiZXhwIjoiMTY0MzQ1MjUyNC4zNjY3MzIiLCJzdWIiOiIzIiwic2NvcGVzIjpbXX0.VlILIebMwpCjXAEZJShU6nZjx3VFI6h3E44146pyjZPUn1FuRQxStgthUupJp1b2JZ3RFiR-n7_1MMIv6lWBqDpLYum_M-Sz3V_-mU7fbSzigKnLZcwCzVgnk71CyjsrWTiIxw0i8u1kmDUTCRsoQDJab1NufkZYERScuKd9_Bx2evTUeYMZgeLUDO2II4Ak1qiZaY3DWvZXDrnTDy18jM7H_VlA6dTZE7djTCNIY7C2ugi8KM0529Tw0HqQi5aXOJvlHAujeclUNC6-533rfjAfKZteJsJc-ArbIsKtjxOBnRcEdnTygsHlZDnx-cLpnJjEKSu6s0cUmW2kGvTE0x3pQrm2mPLZChA21CTgnd-gyEJRfERfkskt6aOXBNeWq_4fCydeyRcXxHMY3Jac1EnNOsVYrJib0Aybxa6BaLH6v5-vvLacYeZevO13jeSPpo6KVZlHkWoHdV53FI4iwtNAFI62tLM_FEnSUay4zWM1vvN5s-JybWRA14B9EVXPmtW41TTQhVd6R1jvPCyMydjoFr9Eqyc91xWkORUU1z7uABLufO6jEceca6-eP7ZL4itA0Sua7eJ-WgTWWctBmz3kl1q723sZfVl4beuikM9Q7jZCeV5fU0IiqrgUnSSrjOZz_RNikWqiBTpSBUQlPu6gICTM9uUCVrJ_97AI-kE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "forgot password",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/auth/password/email",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"auth",
+								"password",
+								"email"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "services",
+			"item": [
+				{
+					"name": "store instant sell",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fullname",
+									"value": "asad ullah",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "asaddir5566@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Islamabad",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "civic center islamabad pakistan",
+									"type": "text"
+								},
+								{
+									"key": "car_name",
+									"value": "civic",
+									"type": "text"
+								},
+								{
+									"key": "car_model",
+									"value": "2018",
+									"type": "text"
+								},
+								{
+									"key": "car_year",
+									"value": "2018",
+									"type": "text"
+								},
+								{
+									"key": "car_color",
+									"value": "white",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2000000",
+									"type": "text"
+								},
+								{
+									"key": "condition",
+									"value": "used",
+									"type": "text"
+								},
+								{
+									"key": "registeration_no",
+									"value": "pk13",
+									"type": "text"
+								},
+								{
+									"key": "registeration_city",
+									"value": "islamabad",
+									"type": "text"
+								},
+								{
+									"key": "featured_image",
+									"type": "file",
+									"src": "/C:/Users/pc/Downloads/trip_cc3fb104-7492-4f9d-bfa6-1081bea84a03_large.jpg"
+								},
+								{
+									"key": "features[]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "features[]",
+									"value": "2A",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/instant-sell-car",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"instant-sell-car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "hire a car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fullname",
+									"value": "asad ullah",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "asaddir5566@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Islamabad",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "civic center islamabad pakistan",
+									"type": "text"
+								},
+								{
+									"key": "total_passengers",
+									"value": "civic",
+									"type": "text"
+								},
+								{
+									"key": "no_adults",
+									"value": "2018",
+									"type": "text"
+								},
+								{
+									"key": "pickup_location",
+									"value": "2018",
+									"type": "text"
+								},
+								{
+									"key": "pickup_time",
+									"value": "white",
+									"type": "text"
+								},
+								{
+									"key": "pickup_date",
+									"value": "2000000",
+									"type": "text"
+								},
+								{
+									"key": "expected_budget",
+									"value": "used",
+									"type": "text"
+								},
+								{
+									"key": "days",
+									"value": "pk13",
+									"type": "text"
+								},
+								{
+									"key": "registeration_city",
+									"value": "islamabad",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "featured_image",
+									"value": "pk.jpg",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/hire-a-car",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"hire-a-car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "wash-service",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "fullname",
+									"value": "asad ullah",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "asaddir5566@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "city",
+									"value": "Islamabad",
+									"type": "text"
+								},
+								{
+									"key": "full_address",
+									"value": "civic center islamabad pakistan",
+									"type": "text"
+								},
+								{
+									"key": "car_name",
+									"value": "civic",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "2018",
+									"type": "text"
+								},
+								{
+									"key": "car_color",
+									"value": "2018",
+									"type": "text"
+								},
+								{
+									"key": "booking_date",
+									"value": "white",
+									"type": "text"
+								},
+								{
+									"key": "pickup_date",
+									"value": "2000000",
+									"type": "text"
+								},
+								{
+									"key": "booking_time",
+									"value": "used",
+									"type": "text"
+								},
+								{
+									"key": "days",
+									"value": "pk13",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "registeration_city",
+									"value": "islamabad",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "featured_image",
+									"value": "pk.jpg",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/wash-service",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"wash-service"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "import-a-car",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/import-a-car",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"import-a-car"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "car features",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status test\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/car-features",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"car-features"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reviews",
+			"item": [
+				{
+					"name": "dealer reviews",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTgxNmZiMGQ2NWI2NDNkY2E4NTU0ZWJhNjhjZGYzNjEwY2Q1ZjYyMDc5YjQ0MmVkNTZjODUyODhmNzQ3NDc0MDgyZWRhZDUwOTgyN2U4OGQiLCJpYXQiOiIxNjEyNDIyMjQ4LjI1NDkzNSIsIm5iZiI6IjE2MTI0MjIyNDguMjU0OTQwIiwiZXhwIjoiMTY0Mzk1ODI0OC4yMTI4NDQiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.VpvbXGAzXG0y32DZWMWflPWfbgvu3pOG920hVrIn8ippLdjIA379Pmly5bm8niBESc06UQpOVR5icVc30FGUIKKQJgV91NZ0ICKutsDNqGTVpi0arsRPJBKcuaGENsboh-XCjfg-7D0d_-YIgqwn2CPk59b4Th18q4Ai_vBfZKFqZGdiRNcr_C6YtILxjw8Lxwhv31cOpqmj9osp-KYHYZz7xXl8xg0uWmpW2E6gtoMxh7ZDgc2-VXmt7oQkpUH_uTBk_aIN8kC9oo_ktPbRsjnSIgPAOPk3Opy7Aac2FnUOLuPLrZB_pvB_79r3ofyT49eK9kj9J88EuGPWmXLjLT45YN4EA_oujkx_XpJxqO-9C4f58DhpXuhu_RU9OJvM0L6tzteWYH1Jjid7ipuy-tvQNigpZZhXt6LZM1344QSLomWw_wcelWsT2bBOiGvm__NlRSrlDrZoLz-8u9m0vNyp3qj_SMZJSkU4_iLXlsjeN9hP5JVYLN-YBedcyidlXI8uo0FGnKD-rYKwE_8GkHFDBb4uAIiQEA4oGE7MkRVHmFNQcxE9UppU8cfBIycGyUQU1OXjgH9MlBDwJ1XxkOu8zwCb00KW-QGqT-A19umZg2f2bPav4RK11akPak0ExCphnNmMKm_e56afFBw9k5hXOSh4ZgVuw1Ba2UuQArE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/dealer-review",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dealer-review"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "User Reviews",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTgxNmZiMGQ2NWI2NDNkY2E4NTU0ZWJhNjhjZGYzNjEwY2Q1ZjYyMDc5YjQ0MmVkNTZjODUyODhmNzQ3NDc0MDgyZWRhZDUwOTgyN2U4OGQiLCJpYXQiOiIxNjEyNDIyMjQ4LjI1NDkzNSIsIm5iZiI6IjE2MTI0MjIyNDguMjU0OTQwIiwiZXhwIjoiMTY0Mzk1ODI0OC4yMTI4NDQiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.VpvbXGAzXG0y32DZWMWflPWfbgvu3pOG920hVrIn8ippLdjIA379Pmly5bm8niBESc06UQpOVR5icVc30FGUIKKQJgV91NZ0ICKutsDNqGTVpi0arsRPJBKcuaGENsboh-XCjfg-7D0d_-YIgqwn2CPk59b4Th18q4Ai_vBfZKFqZGdiRNcr_C6YtILxjw8Lxwhv31cOpqmj9osp-KYHYZz7xXl8xg0uWmpW2E6gtoMxh7ZDgc2-VXmt7oQkpUH_uTBk_aIN8kC9oo_ktPbRsjnSIgPAOPk3Opy7Aac2FnUOLuPLrZB_pvB_79r3ofyT49eK9kj9J88EuGPWmXLjLT45YN4EA_oujkx_XpJxqO-9C4f58DhpXuhu_RU9OJvM0L6tzteWYH1Jjid7ipuy-tvQNigpZZhXt6LZM1344QSLomWw_wcelWsT2bBOiGvm__NlRSrlDrZoLz-8u9m0vNyp3qj_SMZJSkU4_iLXlsjeN9hP5JVYLN-YBedcyidlXI8uo0FGnKD-rYKwE_8GkHFDBb4uAIiQEA4oGE7MkRVHmFNQcxE9UppU8cfBIycGyUQU1OXjgH9MlBDwJ1XxkOu8zwCb00KW-QGqT-A19umZg2f2bPav4RK11akPak0ExCphnNmMKm_e56afFBw9k5hXOSh4ZgVuw1Ba2UuQArE",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/user-reviews",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"user-reviews"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Store Review",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNTgxNmZiMGQ2NWI2NDNkY2E4NTU0ZWJhNjhjZGYzNjEwY2Q1ZjYyMDc5YjQ0MmVkNTZjODUyODhmNzQ3NDc0MDgyZWRhZDUwOTgyN2U4OGQiLCJpYXQiOiIxNjEyNDIyMjQ4LjI1NDkzNSIsIm5iZiI6IjE2MTI0MjIyNDguMjU0OTQwIiwiZXhwIjoiMTY0Mzk1ODI0OC4yMTI4NDQiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.VpvbXGAzXG0y32DZWMWflPWfbgvu3pOG920hVrIn8ippLdjIA379Pmly5bm8niBESc06UQpOVR5icVc30FGUIKKQJgV91NZ0ICKutsDNqGTVpi0arsRPJBKcuaGENsboh-XCjfg-7D0d_-YIgqwn2CPk59b4Th18q4Ai_vBfZKFqZGdiRNcr_C6YtILxjw8Lxwhv31cOpqmj9osp-KYHYZz7xXl8xg0uWmpW2E6gtoMxh7ZDgc2-VXmt7oQkpUH_uTBk_aIN8kC9oo_ktPbRsjnSIgPAOPk3Opy7Aac2FnUOLuPLrZB_pvB_79r3ofyT49eK9kj9J88EuGPWmXLjLT45YN4EA_oujkx_XpJxqO-9C4f58DhpXuhu_RU9OJvM0L6tzteWYH1Jjid7ipuy-tvQNigpZZhXt6LZM1344QSLomWw_wcelWsT2bBOiGvm__NlRSrlDrZoLz-8u9m0vNyp3qj_SMZJSkU4_iLXlsjeN9hP5JVYLN-YBedcyidlXI8uo0FGnKD-rYKwE_8GkHFDBb4uAIiQEA4oGE7MkRVHmFNQcxE9UppU8cfBIycGyUQU1OXjgH9MlBDwJ1XxkOu8zwCb00KW-QGqT-A19umZg2f2bPav4RK11akPak0ExCphnNmMKm_e56afFBw9k5hXOSh4ZgVuw1Ba2UuQArE",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "dealer_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "stars",
+									"value": "4",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/dealer-reviews/store",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"dealer-reviews",
+								"store"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Ads",
+			"item": [
+				{
+					"name": "Save Add",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiMzJkYTJiYzFkY2M4YWNkNzQzMmFiMDQ0YTgyMGQyMTE4ZDE0YmIyNmY2OTcyNjM1OTBjZDk1Y2Y4YmFjOTE4MjQ2YTVlMWFmNTkyM2UyYjciLCJpYXQiOiIxNjE0NTczNTkyLjY2ODIzOSIsIm5iZiI6IjE2MTQ1NzM1OTIuNjY4MjUwIiwiZXhwIjoiMTY0NjEwOTU5Mi41MTE5MTkiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.HQ4UceQxhODwmVQJuDfkBYFrcEL5j2TXUJXPLSnZbhqKrRPuUERsmK_IWWNzB0jtg4zOu6ZmO9IJsrKThQML5AX-7sTcu6R7ckacIz5VEijUkFlPzmxKzh9WHiOBoaY9HZoEA4HpRpH6H0G7ygzdexbGYGN2Fj8h5H1Ze4vpQWav2SQywGur-lozD3sVZ8I_8Q_qNmi7FcBhLKLWTQbvM7itJZdrda9pVHlhJcSQ2zm95oEP2M-_kgT-499Lt7D0jrexS7gAD1ztLq6Oj0mZopz157DFNjl5-COm8E_kdq0vIHTygGPDgVTpaiLwnyeoxIJKfK-rtXDj26yI51GK5z59HfF3sGr8Q25YTTb7eZQcLzJ1Xc5HZDy9G0vyzsGJiwR1JcIFv0qytZQg-qZ9W4LqdXLGv-zGlq52FrmNGHkFf_nn1DAWeIC8XILuiDFlBnm00oXT-7vuskP2gzig9MajOoM_rKFvx5DTa8NI0wfBsmZ5Uko8_2tfitH8Y-whqyaMuSH2youx3IEXj-pGgJY-7HhJxc3Ufcc1xUADo4xZNBlqkR8gb1r-OlrgbHLGoTsK4G2zZ5MXmc8E0Md-G5XMqAb7735qQLH8hIO3NBVR4XuN8DLqg6VkMOJb_CeMevVYQeCwEp_sD2tymVpqsck87cds-5iKnbhPhhiMr84",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDNhMjhiMDhkMjcyODEyN2Q5NjI3ZjRjMjAzYjI2NjdiYTE1NzU5NWI0YmE1NTFmOTQ2N2YyZDNhYjNmZjVjMDYzNTQ0OTlkYWI2MjhhMTIiLCJpYXQiOiIxNjEyNDMxMjYxLjM2NTQ2MyIsIm5iZiI6IjE2MTI0MzEyNjEuMzY1NDc0IiwiZXhwIjoiMTY0Mzk2NzI2MS4zMjY1OTgiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.kn1nEr1yehK-eo_u9dr8KvUHa-oxn_rRUjTahOWqsS_aoyeVD2YHLox4lf4E-fFzP6IJCljtci3TWKod8VC1znARz0PnJgA8VhndxEso4hpLaI1M_jPZL6VjpA3dIZkaCQ0rtDmx7zXMzjxMvXHzXvEE5Fx5qU5WvE04D6GiBAnh_u9pmFkNws5ZGXcw8nJTef6TJGxitKvWVcqXBu_iVG3-l5coeI0jl9IyhLG7u9JfgRcHaUiLBDWj0p1jYNZd3VYe9mIHljIJ5cKQxyfspwWKDuuLApcBOz0HyewCVdU2c-oNU6foIrDTKapMp2i8RSR4FAEmzo0JGWPGyx4BD8XJbtlU2xdalXSH2aCa8HvbFRJylVIxrWhdjSkiF2ND3q86_sQIIXTXfJ33KrCGPiQ9ld_BiFf0U5aJeQlY7UnMxAVw3hS1xDgCjjkf8Oi0kKfxVcLpwsYDkJ8qttNlV3zQNyLQYN3NgJFBdRSDvLlxI-KbGHxFepaoi08jh-WXM8afJYxJoBMPuI9TusHW2SXnzmmc-BYj00FrJk1P92TH2BpNyqXfxyToRDcFua8RTK2p9INgIhNrEFunKn3TMYEIeeKi77oFCjepVRHFs8RACo-lo12Nvly2qL6AcaOrqqvZFLnQ21xtA6AYfYWKxPVv-ZYgwBtzEQmRN1dVMKM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "car_name",
+									"value": "test",
+									"type": "text"
+								},
+								{
+									"key": "price",
+									"value": "2345",
+									"type": "text"
+								},
+								{
+									"key": "ad_description",
+									"value": "testing",
+									"type": "text"
+								},
+								{
+									"key": "car_features[]",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "featured_image",
+									"type": "file",
+									"src": "/C:/Users/pc/Downloads/asad.jpg"
+								},
+								{
+									"key": "model",
+									"value": "tetst",
+									"type": "text"
+								},
+								{
+									"key": "company",
+									"value": "tets",
+									"type": "text"
+								},
+								{
+									"key": "car_color",
+									"value": "tstst",
+									"type": "text"
+								},
+								{
+									"key": "mileage",
+									"value": "120",
+									"type": "text"
+								},
+								{
+									"key": "condition",
+									"value": "tsetst",
+									"type": "text"
+								},
+								{
+									"key": "transmission",
+									"value": "tsetse",
+									"type": "text"
+								},
+								{
+									"key": "engine",
+									"value": "tsts",
+									"type": "text"
+								},
+								{
+									"key": "gallery_images[]",
+									"type": "file",
+									"src": "/C:/Users/pc/Downloads/trip_cc3fb104-7492-4f9d-bfa6-1081bea84a03_large.jpg"
+								},
+								{
+									"key": "gallery_images[]",
+									"type": "file",
+									"src": "/C:/Users/pc/Downloads/featured-India-Pakistan-1.jpg"
+								},
+								{
+									"key": "year",
+									"value": "2019",
+									"type": "text"
+								},
+								{
+									"key": "category_id",
+									"value": "3",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "03025749006",
+									"type": "text"
+								},
+								{
+									"key": "available_city",
+									"value": "Peshawar",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/add-store",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"add-store"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "all-ads",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/all-ads",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"all-ads"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Seller Ads",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiNjJkMDAyYjc1ODk5NDJlM2EwZjEyZjI5MmZjYzkwNTZjMDVmZDRjMGI2ZGFkNTFkY2E5ZDQ2MTgwYTMxZGU2Mzg1MmRmZWI2NjFkY2FlMGMiLCJpYXQiOiIxNjE0MjQ4NDE1Ljk0Nzk5MSIsIm5iZiI6IjE2MTQyNDg0MTUuOTQ3OTk2IiwiZXhwIjoiMTY0NTc4NDQxNS45MDU0MzkiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.Ydwm_EvXUtjKk4KTcvr-ZpTcxG6XZoWhhftPdcUF5ebg-ICF_Jl5YmPoVTpEupd3B9TYd9frSbpX2z-IjiqwHH82T9NhzBY5xvsFddpVBtj5I7delcur5xNUdivZ2avkpIWrQ0PaQWIWLV3GqBA3VieR4Z9CODjQG2kdyplsvYM9JvSqjMVdK23yT9t6_Em8Zc7sCTCGfB_MywSpZnhMpuxbOkggTvLEmskLn1886YkCXLba2wnmJTGtdTgd4AvijdFLWK7y-VZiDMyKrB6p7R_WjbIpMn3aaw4dLtOmwiYNgbMl-Z-w0H966go3cfOKB4qFyZ0dZahfJ0hJWMSjeObyVWILh8-UqQJTkBXL6HyNpD-4RwFnIprFj3qCkWX6lFNhdXtQV41vA2I6D9CocT4iHGgDQAsxnbXVe6zSbjYrfYHdptxV7eaMvgxKeSHSB7QOWEnWccMkdF97H3N6O88eUhD7uj5Mg3poo6eG30CzziAhXuxnGq8O3AfapYFT0HkcSniKqmYJY3iFZmYaqi4VjMlKEZ1t5upkDRJdeXsMbUSNxKsoJCOl9Nb-up3dNzavbKn4vMXs0TbtbnI8RnPnJcmKu214kyOA2AUyORMnqzvJ8Hp4SU-pX8mAKocw6Cr3QSrCTIbbP9dq7QBHHc2881zfW1NsUV-NYCX5Eys",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJhdWQiOiIxIiwianRpIjoiZDNhMjhiMDhkMjcyODEyN2Q5NjI3ZjRjMjAzYjI2NjdiYTE1NzU5NWI0YmE1NTFmOTQ2N2YyZDNhYjNmZjVjMDYzNTQ0OTlkYWI2MjhhMTIiLCJpYXQiOiIxNjEyNDMxMjYxLjM2NTQ2MyIsIm5iZiI6IjE2MTI0MzEyNjEuMzY1NDc0IiwiZXhwIjoiMTY0Mzk2NzI2MS4zMjY1OTgiLCJzdWIiOiIyIiwic2NvcGVzIjpbXX0.kn1nEr1yehK-eo_u9dr8KvUHa-oxn_rRUjTahOWqsS_aoyeVD2YHLox4lf4E-fFzP6IJCljtci3TWKod8VC1znARz0PnJgA8VhndxEso4hpLaI1M_jPZL6VjpA3dIZkaCQ0rtDmx7zXMzjxMvXHzXvEE5Fx5qU5WvE04D6GiBAnh_u9pmFkNws5ZGXcw8nJTef6TJGxitKvWVcqXBu_iVG3-l5coeI0jl9IyhLG7u9JfgRcHaUiLBDWj0p1jYNZd3VYe9mIHljIJ5cKQxyfspwWKDuuLApcBOz0HyewCVdU2c-oNU6foIrDTKapMp2i8RSR4FAEmzo0JGWPGyx4BD8XJbtlU2xdalXSH2aCa8HvbFRJylVIxrWhdjSkiF2ND3q86_sQIIXTXfJ33KrCGPiQ9ld_BiFf0U5aJeQlY7UnMxAVw3hS1xDgCjjkf8Oi0kKfxVcLpwsYDkJ8qttNlV3zQNyLQYN3NgJFBdRSDvLlxI-KbGHxFepaoi08jh-WXM8afJYxJoBMPuI9TusHW2SXnzmmc-BYj00FrJk1P92TH2BpNyqXfxyToRDcFua8RTK2p9INgIhNrEFunKn3TMYEIeeKi77oFCjepVRHFs8RACo-lo12Nvly2qL6AcaOrqqvZFLnQ21xtA6AYfYWKxPVv-ZYgwBtzEQmRN1dVMKM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/seller-ads/all",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"seller-ads",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Ad categories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/ad-category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"ad-category"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Legal pages",
+			"item": [
+				{
+					"name": "privacy",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/privacy-policy",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"privacy-policy"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Terms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/terms",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"terms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/refund-policy",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"refund-policy"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "social media",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/social-links",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"social-links"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "category",
+			"item": [
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/news-category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"news-category"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Evetns",
+			"item": [
+				{
+					"name": "event category",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/event-category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"event-category"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Events",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/events",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"events"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "News",
+			"item": [
+				{
+					"name": "news",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/news",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"news"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "News catgory",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/news-category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"news-category"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Search",
+			"item": [
+				{
+					"name": "advance-search",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/advance-search",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"advance-search"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "condition",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/condition/used",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"condition",
+								"used"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "explore cars",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.18.15:8000/api/explore-cars",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"18",
+								"15"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"explore-cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "dealer Search",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://192.168.18.15:8000/api/search-dealers",
+							"protocol": "http",
+							"host": [
+								"192",
+								"168",
+								"18",
+								"15"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"search-dealers"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "package",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/packages",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"packages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.18.15:8000/api/all-dealers",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"18",
+						"15"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"all-dealers"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
